@@ -1,0 +1,16 @@
+
+
+@import "tailwindcss";
+
+body{
+  background: blue;
+  color: whitesmoke;
+}
+
+.bg {
+  background: blanchedalmond;
+}
+
+.bg2 {
+  background: burlywood;
+}
