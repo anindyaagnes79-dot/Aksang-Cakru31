@@ -1,20 +1,17 @@
-import React from 'react'
+import React from "react"
 
 const Navbar = () => {
   return (
-    <div>
-            <div>
-        <h2>HEARMONY</h2>
-    </div>
-    <div>
-        <u1>
-            <li>HOME</li>
-            <li>RESERVATION</li>
-            <li>MERCHANDISE</li>
-        </u1>
-    </div>
-    </div>
-  )
-};
+    <nav className="flex w-full justify-between items-center px-12 py-8">
+      <h2 className="text-2xl font-bold">HEARMONY</h2>
 
-export default Navbar;
+      <ul className="flex flex-row gap-8 list-none p-0 m-0">
+        <li className="text-lg font-bold cursor-pointer">HOME</li>
+        <li className="text-lg font-bold cursor-pointer">RESERVATION</li>
+        <li className="text-lg font-bold cursor-pointer">MERCHANDISE</li>
+      </ul>
+    </nav>
+  )
+}
+
+export default Navbar
