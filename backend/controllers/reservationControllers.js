@@ -30,7 +30,13 @@ const getAllReservation = async (req, res) => {
 }
 
 const deleteReservation = async (req, res) => {
-
+    try {
+        const {id} = req.params;
+        await reservationModels.findByIdAndDelete(id)
+        res.json({message: "Reservation removed"})
+    } catch (error) {
+        res.json({error: "Error deleting reservations"})
+    }
 }
 
 export {createReservation, getAllReservation, deleteReservation}

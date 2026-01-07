@@ -9,6 +9,7 @@ const reservationSchema = new mongoose.Schema({
     obat: {type: String, require: true},
     kontak: {type: String, require: true},
     darurat: {type: String, require: true},
+    time: {type: String, require: true},
 })
 
 export default mongoose.model("Reservation", reservationSchema)
