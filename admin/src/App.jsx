@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import React {useEffect, useState } from 'react'
 import login from './components/login.jsx'
 import sidebar from './components/sidebar.jsx'
 export const backendUrl = 'http://localhost:4000'
