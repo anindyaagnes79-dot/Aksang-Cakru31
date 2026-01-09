@@ -154,9 +154,8 @@ function MerchCatalog() {
 
         {/* MODAL */}
         {selectedProduct && (
-          <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[9999]">
-
-            <div className="relative bg-[#111] rounded-3xl p-8 max-w-md w-full mx-4 border border-gray-700 z-[9999]">
+          <div className="fixed inset-0 bg-black/80 flex items-start justify-center z-[9999] p-4 overflow-y-auto">
+            <div className="relative bg-[#111] rounded-3xl p-6 w-full max-w-sm mx-auto mt-15 border border-gray-700 z-[9999]">
 
               {/* BACK BUTTON FIXED DI ATAS NAVBAR */}
               <button
