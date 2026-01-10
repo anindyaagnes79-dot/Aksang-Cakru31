@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from "react";
+import axios from "axios";
 import { backendUrl } from "../App";
-import { toast } from 'react-toastify'
-import { MdDeleteForever } from 'react-icons/md'
+import { toast } from 'react-toastify';
+import { MdDeleteForever } from 'react-icons/md';
 
 const ListCatalog = ({token}) => {
-    const [list, setList] = useState ([])
+    const [list, setList] = useState ([]);
+    
     const fetchList = async (params) => {
         try {
             const response = await axios.get(backendUrl + '/api/product/list', {headers: {token}})
@@ -34,7 +36,7 @@ const ListCatalog = ({token}) => {
                     <b>Action</b>
                 </div>
 
-                {list.map((item, index)
+                {list.map((item, index) =>
                 <div key={index}>
                     <img src={item.image} alt="" />
                     <p>{item.name}</p>
