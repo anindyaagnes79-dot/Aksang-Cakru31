@@ -142,7 +142,7 @@ function HomeContent({ setPage }) {
         <span className="text-[#355E3B] font-grunge-decade-regular animate-pulse drop-shadow-lg">special merch!</span>
       </h2>
       <p className="text-gray-300 leading-relaxed mb-10 text-lg md:text-xl font-perandory-semi-condensed animate-fade-in-delay drop-shadow-md">
-        HEARMONY merupakan platform yang menghadirkan berbagai merchandise eksklusif. Dari aksesoris unik hingga stiker gemas, semua dibuat supaya pengalamanmu di HEARMONY makin berkesan!
+        HEARMONY merupakan platform yang menghadirkan berbagai merchandise eksklusif untuk Hearmates. Dari aksesoris unik hingga stiker gemas, semua dibuat supaya pengalamanmu di HEARMONY makin berkesan!
       </p>
       <button
         onClick={() => setPage('merch')}
