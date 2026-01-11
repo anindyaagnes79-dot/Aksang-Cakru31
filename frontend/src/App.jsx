@@ -18,7 +18,7 @@ function App() {
 
       {/* Konten utama */}
       <div>
-        {page === "home" && <HomeContent setPage={setPage} />}
+        {page === "home" && <HomeContent />}
         {page === "merch" && <MerchCatalog />}
         {page === "reservation" && <ReservationForm />}
       </div>

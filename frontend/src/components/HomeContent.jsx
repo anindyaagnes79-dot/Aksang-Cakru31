@@ -9,7 +9,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import "./style";
+import "./style/HomeContent.css"
 
 // VECTORS / DECORATIVE ELEMENTS
 import Vector92 from "../assets/Vector 92.png"
@@ -40,7 +40,7 @@ const merchSlides = [
   { img: StickerSatuan, name: "Sticker Satuan" },
 ]
 
-function HomeContent({ setPage }) {
+function HomeContent({ setPage = () => {} }) {
   const [selectedProduct, setSelectedProduct] = useState(null)
   const vectors = [Vector92, Vector103, Vector104, Vector118, Vector135, Vector136, Vector137, Vector96]
 
@@ -70,18 +70,19 @@ function HomeContent({ setPage }) {
       ))}
 
       {/* Banner Logo */}
-      <div className="relative z-10 text-center py-45">
-        <img src={LOGO} className="mx-auto w-40 md:w-250" alt="logo" />
+      <div className="relative z-10 text-center py-[180px]">
+        <img src={LOGO} className="mx-auto w-40 md:w-[250px]" alt="logo" />
         <h1 className="mt-6 text-4xl md:text-6xl text-[#f7d154] font-bold font-['Grunge-Decade']">
           <b>To be Loved</b> <b>is To be Heard</b>
         </h1>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10 px-6 md:px-12 py-30">
+      <div className="max-w-7xl mx-auto relative z-10 px-6 md:px-12 py-[120px]">
+
 
         {/* ====================== OUR BOOTH ====================== */}
         <div className="text-center mb-32 relative">
-          <h1 className="relative z-10 text-10xl md:text-7xl font-bold tracking-tighter font-ut-staybro-demo text-white drop-shadow-[0_0_15px_#355E3B]">
+          <h1 className="relative z-10 text-[10rem] md:text-7xl font-bold tracking-tighter font-ut-staybro-demo text-white drop-shadow-[0_0_15px_#355E3B]">
             OUR <span className="text-[#355E3B] drop-shadow-[0_0_30px_#355E3B]">BOOTH</span>
           </h1>
           <div className="h-1 w-24 bg-[#355E3B] mx-auto mt-4 rounded-full shadow-[0_0_15px_#355E3B]" />
@@ -124,7 +125,7 @@ function HomeContent({ setPage }) {
 
         {/* ====================== PERFORMANCE ====================== */}
         <div className="mt-56 text-center relative py-20">
-          <h2 className="relative z-10 text-10xl md:text-7xl font-bold mb-4 font-ut-staybro-demo text-white drop-shadow-[0_0_15px_#355E3B]">
+          <h2 className="relative z-10 text-[10rem] md:text-7xl font-bold mb-4 font-ut-staybro-demo text-white drop-shadow-[0_0_15px_#355E3B]">
             Our Performance?!
           </h2>
           <p className="relative z-10 text-[#355E3B] text-5xl tracking-[0.5em] font-grunge-decade-regular drop-shadow-[0_0_10px_#355E3B] animate-pulse">
