@@ -4,8 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
-    react(),
-    tailwindcss(),
+    react(), tailwindcss(),
   ],
   base: process.env.VITE_BASE_PATH || "/Aksang-Cakru31"
 })
