@@ -6,7 +6,7 @@ import ReservationForm from "./components/ReservationForm";
 import Footer from "./components/Footer";
 
 // URL backend
-export const backendUrl = 'http://localhost:4000';
+export const backendUrl = "http://localhost:4000";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -16,14 +16,14 @@ function App() {
       {/* Navbar */}
       <Navbar setPage={setPage} />
 
-      {/* Konten utama */}
-      <div>
-        {page === "home" && <HomeContent />}
+      {/* Main Content */}
+      <main className="pt-15">
+        {page === "home" && <HomeContent setPage={setPage} />}
         {page === "merch" && <MerchCatalog />}
         {page === "reservation" && <ReservationForm />}
-      </div>
+      </main>
 
-      {/* Footer */}
+      {/* Footer (always visible) */}
       <Footer />
     </>
   );
