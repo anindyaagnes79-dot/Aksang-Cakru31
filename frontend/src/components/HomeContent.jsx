@@ -4,10 +4,12 @@ import BgTxt2 from "../assets/bg texture 2.png"
 import LOGO from "../assets/LOGO.png"
 
 // SWIPER
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay, Pagination } from "swiper/modules"
-import "swiper/css"
-import "swiper/css/pagination"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "./style";
 
 // VECTORS / DECORATIVE ELEMENTS
 import Vector92 from "../assets/Vector 92.png"
@@ -200,20 +202,6 @@ function HomeContent({ setPage }) {
 </div>
 
       </div>
-
-      <style jsx>{`
-        @keyframes float {
-          0%, 100% { transform: translate(0, 0) rotate(0deg); }
-          33% { transform: translate(10px, -15px) rotate(2deg); }
-          66% { transform: translate(-5px, 10px) rotate(-2deg); }
-        }
-        .animate-float { animation: float ease-in-out infinite; }
-        .animate-fade-in { animation: fadeIn 1s ease-in-out; }
-        .animate-fade-in-delay { animation: fadeIn 1s ease-in-out 0.5s both; }
-        .animate-bounce-subtle { animation: bounceSubtle 2s infinite; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes bounceSubtle { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
-      `}</style>
     </section>
   )
 }
