@@ -157,7 +157,8 @@ function HomeContent({ setPage = () => {} }) {
             relative z-[2]
             w-full
             text-center
-            px-12 py-12
+            px-4 pb-3 pt-6
+            md:px-12 py-12
             tracking-[1px]
             md:tracking-[4px]
             font-bold
@@ -167,12 +168,12 @@ function HomeContent({ setPage = () => {} }) {
         >
           <div className="absolute inset-0 z-[2] blur-sm opacity-90">
             <img
-              className="absolute top-[120px] left-[-100px] scale-[0.2]"
+              className="absolute md:top-[100px] left-[-100px] scale-[0.2]"
               src={Vector135}
               alt="elementbanner"
             />
             <img
-              className="absolute top-[190px] right-[0px] scale-[0.22]"
+              className="absolute top-[150px] right-[0px] scale-[0.22]"
               src={Vector136}
               alt="elementbanner"
             />
@@ -195,7 +196,8 @@ function HomeContent({ setPage = () => {} }) {
                 relative 
                 z-[2] 
                 mt-6 
-                text-[50%] 
+                text-[150%] 
+                md:text-[300%]
                 text-[#f7d154]"
           >
             <b id="tbl">To be Loved</b> <b id="tbh">is To be Heard</b>
@@ -220,14 +222,15 @@ function HomeContent({ setPage = () => {} }) {
             flex flex-col
             items-center
             text-center
-            px-10 py-20
+            px-4 pt-20 pb-2
+            md:px-10 md:py-20
             max-w-[1000px]
             mx-auto
         "
         >
           <h1
             className="
-          mb-20 text-[76px] font-bold tracking-[5px]"
+          mb-20 text-[300%] md:text-[76px] font-bold md:tracking-[5px]"
           >
             Our Booth
           </h1>
@@ -277,23 +280,23 @@ function HomeContent({ setPage = () => {} }) {
               <img src={Vector104} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="absolute scale-[0.1] top-[100px] left-[-650px] z-[3]">
+            <div className="absolute scale-[0.3] top-[100px] left-[-650px] z-[3]">
               <img src={Component1} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="absolute scale-[0.3] bottom-[300px] left-[-170px] z-[1] opacity-80 blur-[4px]">
+            <div className="absolute scale-[0.3] md:bottom-[300px] bottom-[130px] left-[-170px] z-[1] opacity-80 blur-[4px]">
               <img src={Vector92} alt="element" className="" />
             </div>
 
-            <div className="absolute scale-[0.25] bottom-[-60px] right-[-300px] z-[3] opacity-80">
+            <div className="absolute md:scale-[0.25] scale-[0.08] md:bottom-[-60px] bottom-[-230px] right-[-270px] z-[3] opacity-80">
               <img src={Vector135} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="absolute scale-[0.3] bottom-[0px] left-[-220px] z-[3] opacity-80">
+            <div className="absolute scale-[0.1] md:scale-[0.3] bottom-[-160px] md:bottom-[0] left-[-170px] md:left-[-220px] z-[3] opacity-80">
               <img src={Vector136} alt="element" className=" blur-[1.5px]" />
             </div>
           </div>
-          <div className="absolute scale-[0.3] bottom-[-570px] left-[0px] z-[3]">
+          <div className="absolute scale-[0.3] bottom-[-290px] md:bottom-[-570px] md:left-[0px] z-[3]">
             <img src={tanganhijau} alt="element" className="" />
           </div>
 
@@ -325,7 +328,7 @@ function HomeContent({ setPage = () => {} }) {
                 {/* image */}
                 <div className="relative w-full md:w-1/2">
                   <div className="absolute -inset-4 bg-[#355E3B]/20 rounded-[2rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-700" />
-                  <div className="relative aspect-video md:aspect-square overflow-hidden rounded-[2.5rem] border border-white/10 shadow-2xl">
+                  <div className="relative w-full aspect-square overflow-hidden rounded-[2.5rem] border border-white/10 shadow-2xl">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -355,10 +358,10 @@ function HomeContent({ setPage = () => {} }) {
 
           {/*performance*/}
           <div className="pt-24 pb-12 text-center">
-            <h1 className="mb-2 text-[76px] font-bold tracking-[5px]">
+            <h1 className="mb-2 text-[200%] md:text-[76px] font-bold tracking-[5px]">
               Our Performance?!
             </h1>
-            <h2 className="mb-20 text-[56px] font-bold tracking-[10px]">
+            <h2 className="mb-20 text-[180%] md:text-[56px] font-bold tracking-[10px]">
               Stay Tuned!
             </h2>
           </div>
@@ -368,8 +371,9 @@ function HomeContent({ setPage = () => {} }) {
         <div
           className="
             relative z-[2]
-            mt-[200px]
-            p-8
+            mt-[150px]
+            md:mt-[200px]
+            md:p-8
             text-center
             font-bold
             uppercase
@@ -378,15 +382,18 @@ function HomeContent({ setPage = () => {} }) {
         >
           <h2
             className="
-          text-[76px]
-          tracking-[20px]
+          text-[200%]
+          md:text-[76px]
+          tracking-[5px]
+          md:tracking-[20px]
           "
           >
             25 January 2026
           </h2>
           <h4
             className="
-          text-[55px]
+            text-[180%]
+          md:text-[55px]
           "
           >
             Grab your reservation!!
