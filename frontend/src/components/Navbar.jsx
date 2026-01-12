@@ -13,11 +13,11 @@ const Navbar = ({ setPage }) => {
     `text-base font-semibold transition ${
       activePage === page
         ? "text-[#355E3B]"
-        : "text-black hover:text-[#355E3B]"
+        : "text-white hover:text-[#355E3B] cursor-pointer"
     }`
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white z-[9999] shadow-md">
+    <nav className="fixed top-0 left-0 w-full bg-black z-[9999] shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
 
         {/* Logo */}
@@ -30,7 +30,7 @@ const Navbar = ({ setPage }) => {
 
         {/* Links */}
         <div className="flex gap-8">
-          <button onClick={() => handleClick("home")} className={linkClass("home")}>
+          <button onClick={() => handleClick("home")} className={linkClass("home")} >
             HOME
           </button>
 

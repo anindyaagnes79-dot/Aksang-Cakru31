@@ -3,7 +3,7 @@ import logoFooter from '../assets/LOGO FOOTER.png'
 
 // LOGO SOSMED PNG
 import instagram from '../assets/instagram.png'
-import twitter from '../assets/twitter.png'
+import gmail from '../assets/gmail.png'
 import tiktok from '../assets/tiktok.png'
 
 function Footer() {
@@ -18,17 +18,17 @@ function Footer() {
         <div className="flex gap-8 justify-center">
           <img
             src={instagram}
-            alt="Instagram"
-            className="h-10 w-10 cursor-pointer hover:scale-110 transition-transform filter invert"
-          />
-          <img
-            src={twitter}
-            alt="Twitter"
+            alt="Instagram" href="https://www.instagram.com/hearmony_"
             className="h-10 w-10 cursor-pointer hover:scale-110 transition-transform filter invert"
           />
           <img
             src={tiktok}
-            alt="TikTok"
+            alt="TikTok" href="https://www.tiktok.com/@hearmony_"
+            className="h-10 w-10 cursor-pointer hover:scale-110 transition-transform filter invert"
+          />
+          <img
+            src={gmail}
+            alt="Gmail" href="mailto:hearmonyofus@gmail.com"
             className="h-10 w-10 cursor-pointer hover:scale-110 transition-transform filter invert"
           />
         </div>

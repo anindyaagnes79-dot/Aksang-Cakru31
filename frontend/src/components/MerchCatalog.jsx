@@ -20,13 +20,13 @@ import Vector136 from '../assets/Vector 136.png'
 import Vector137 from '../assets/Vector 83.png'
 
 const products = [
-  { id: 1, name: 'Enamel Pin', price: 'Rp 35.000', status: 'available', description: 'BLA BLA BLA BLA BLA.', image: EnamelPin },
-  { id: 2, name: 'Keychain', price: 'Rp 15.000', status: 'soldout', description: 'BLA BLA BLA BLA BLA.', image: Keychain },
-  { id: 3, name: 'Kipas', price: 'Rp 10.000', status: 'available', description: 'BLA BLA BLA BLA BLA.', image: Kipas },
-  { id: 4, name: 'Sticker Pack Fishies', price: 'Rp 15.000', status: 'soldout', description: 'BLA BLA BLA BLA BLA.', image: StickerFishies },
-  { id: 5, name: 'Sticker Pack Hearmony', price: 'Rp 15.000', status: 'available', description: 'BLA BLA BLA BLA BLA.', image: StickerHearmony },
-  { id: 6, name: 'Sticker Pack Skena', price: 'Rp 15.000', status: 'available', description: 'BLA BLA BLA BLA BLA..', image: StickerSkena },
-  { id: 7, name: 'Sticker Satuan', price: 'Rp 7.000 / Rp 12.000', status: 'available', description: 'Pilih 1 PCS atau 2 PCS.', image: StickerSatuan },
+  { id: 1, name: 'Enamel Pin', price: 'Rp 35.000', status: 'available', description: 'Pin enamel yang vibrant ini bisa bikin jaket atau tas Hearmates tambah kece! Penampilan pun jadi lebih unik.', image: EnamelPin },
+  { id: 2, name: 'Keychain', price: 'Rp 15.000', status: 'available', description: 'Aksesoris kecil dengan desain pop-art dan colourful ini bakal bikin Hearmates makin stand-out! Cocok banget untuk digantung pada kunci, tas, atau totebag Hearmates biar berbeda dari yang lain!', image: Keychain },
+  { id: 3, name: 'Kipas', price: 'Rp 10.000', status: 'available', description: 'Kipas dengan desain colourful dan abstrak yang ringan dan praktis jadi wajib masuk tas setiap ke konser atau beraktivitas outdoor.', image: Kipas },
+  { id: 4, name: 'Sticker Pack Fishies', price: 'Rp 15.000', status: 'available', description: 'Stiker ikan nyentrik dengan warna vibrant dan artistik abis. Cocok ditempel pada laptop, tumbler, atau buku catatan supaya tambah artsy!', image: StickerFishies },
+  { id: 5, name: 'Sticker Pack Hearmony', price: 'Rp 15.000', status: 'available', description: 'Stiker super gemas dengan nuansa “harmony” yang membawa energi positif. Cocok untuk jurnal, koper, atau powerbank Hearmates, nih!', image: StickerHearmony },
+  { id: 6, name: 'Sticker Pack Skena', price: 'Rp 15.000', status: 'available', description: 'Stiker dengan ilustrasi unik dan edgy, mulai dari kucing nge-band sampai mobil retro. Klop banget deh untuk helm, HP, atau laptop Hearmates biar skena abis!', image: StickerSkena },
+  { id: 7, name: 'Sticker Satuan', price: 'Rp 7.000 / Rp 12.000', status: 'available', description: 'Stiker dengan kata-kata catchy dan ekspresif ini cocok banget untuk seru-seruan dan dijamin relate banget!', image: StickerSatuan },
 ]
 
 function MerchCatalog() {
@@ -154,9 +154,8 @@ function MerchCatalog() {
 
         {/* MODAL */}
         {selectedProduct && (
-          <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[9999]">
-
-            <div className="relative bg-[#111] rounded-3xl p-8 max-w-md w-full mx-4 border border-gray-700 z-[9999]">
+          <div className="fixed inset-0 bg-black/80 flex items-start justify-center z-[9999] p-4 overflow-y-auto">
+            <div className="relative bg-[#111] rounded-3xl p-6 w-full max-w-sm mx-auto mt-15 border border-gray-700 z-[9999]">
 
               {/* BACK BUTTON FIXED DI ATAS NAVBAR */}
               <button
@@ -215,6 +214,11 @@ function MerchCatalog() {
               {/* BUY BUTTON */}
               <button
                 disabled={selectedProduct.status === 'soldout'}
+                onClick={() => {
+                  if (selectedProduct.status !== 'soldout') {
+                    window.open('https://docs.google.com/forms/d/e/1FAIpQLSeJ0HOkqbYJYdNhnIVCnjZVLkPyeqn4c1jVe2hvURsd2_8wnA/viewform', '_blank');
+                  }
+                }}
                 className={`w-full py-3 rounded-full font-semibold text-white ${
                   selectedProduct.status === 'soldout'
                     ? 'bg-gray-600'
@@ -223,7 +227,7 @@ function MerchCatalog() {
               >
                 {selectedProduct.status === 'soldout'
                   ? 'Habis Terjual'
-                  : 'Beli Sekarang'}
+                  : 'Pre-Order Sekarang'}
               </button>
             </div>
           </div>

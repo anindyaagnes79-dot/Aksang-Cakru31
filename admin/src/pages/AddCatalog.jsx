@@ -29,12 +29,15 @@ const AddCatalog = ({token}) => {
                 } else {
                     toast.error(response.data.message)
                 }
+        } catch (error) {
+            console.log(error);
+            toast.error(error.message)   
         }
     }
 
   return (
     <div>
-       <form>
+       <form onSubmit={OnSubmitHandler}>
             <div>
                 <p>Upload Image</p>
                 <div>

@@ -6,6 +6,10 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import "swiper/css";
+import "swiper/css/pagination";
+import "./style/HomeContent.css";
+
 //elements
 import Component1 from "../assets/Component 1.png";
 import Component2 from "../assets/Component 2.png";
@@ -35,6 +39,14 @@ import StickerFishies from "../assets/Merch/Sticker Pack Fishies.jpg";
 import StickerHearmony from "../assets/Merch/Sticker Pack Hearmony.jpg";
 import StickerSkena from "../assets/Merch/Sticker Pack Skena.jpg";
 import StickerSatuan from "../assets/Merch/Sticker Satuan.jpg";
+// MERCH 2 PNG
+import EnamelPin from "../assets/Merch 2/enamel pin.png";
+import Keychain from "../assets/Merch 2/keychain.png";
+import Kipas from "../assets/Merch 2/kipas.png";
+import StickerFishies from "../assets/Merch 2/sticker pack fishies.png";
+import StickerHearmony from "../assets/Merch 2/sticker pack hearmony.png";
+import StickerSkena from "../assets/Merch 2/sticker pack skena.png";
+import StickerSatuan from "../assets/Merch 2/sticker satuan meme.png";
 
 const merchSlides = [
   { img: EnamelPin, name: "Enamel Pin" },
@@ -46,17 +58,29 @@ const merchSlides = [
   { img: StickerSatuan, name: "Sticker Satuan" },
 ];
 
-//mw nngis
-function HomeContent() {
+function HomeContent({ setPage = () => {} }) {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const vectors = [
+    Vector92,
+    Vector103,
+    Vector104,
+    Vector118,
+    Vector135,
+    Vector136,
+    Vector137,
+    Vector96,
+  ];
+
+  //mw nngis
   return (
     <>
       <div
         className="
-      bg-gradient-to-br from-black via-gray-900 to-black min-h-screen
+      bg-gradient-to-br from-black via-gray-900 to-black min-h-screen]
       relative 
       overflow-hidden
       text-white
-      font-['Perandory']
+      font-['Perandory-Semi-Condensed']
       tracking-[2px]
       "
       >
@@ -384,7 +408,7 @@ function HomeContent() {
           </a>
         </div>
 
-        {/* ====================== MERCH ====================== */}
+        {/*====================== MERCH ====================== */}
         <div className="mt-32 relative z-10">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             {/* TEXT */}
@@ -397,8 +421,10 @@ function HomeContent() {
                 </span>
               </h2>
               <p className="text-gray-300 leading-relaxed mb-10 text-lg md:text-xl font-perandory-semi-condensed animate-fade-in-delay drop-shadow-md">
-                FINDMI 2026 merupakan platform pembelian merchandise dari acara
-                tahunan di Institut Teknologi Bandung (AMI 2026).
+                HEARMONY merupakan platform yang menghadirkan berbagai
+                merchandise eksklusif untuk Hearmates. Dari aksesoris unik
+                hingga stiker gemas, semua dibuat supaya pengalamanmu di
+                HEARMONY makin berkesan!
               </p>
               <button
                 onClick={() => setPage("merch")}
@@ -408,30 +434,49 @@ function HomeContent() {
               </button>
             </div>
 
-            {/* SLIDER */}
-            <Swiper
-              modules={[Autoplay, Pagination]}
-              autoplay={{ delay: 2500, disableOnInteraction: false }}
-              pagination={{ clickable: true }}
-              loop
-              spaceBetween={24}
-              slidesPerView={1}
-              grabCursor
-              className="w-full"
-            >
-              {merchSlides.map((slide, i) => (
-                <SwiperSlide key={i}>
-                  <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl border border-[#355E3B]/40 max-w-md mx-auto group">
-                    <img
-                      src={slide.img}
-                      alt={slide.name}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#355E3B]/15 to-[#002147]/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            {/* SLIDER 4:3 dengan desain yang lebih menarik */}
+            <div className="relative">
+              <Swiper
+                modules={[Autoplay, Pagination]}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                pagination={{ clickable: true, dynamicBullets: true }}
+                loop
+                spaceBetween={30}
+                slidesPerView={1}
+                grabCursor
+                className="w-full"
+                style={{ height: "auto" }} // Tinggi otomatis berdasarkan konten
+              >
+                {merchSlides.map((slide, i) => (
+                  <SwiperSlide key={i}>
+                    <div className="relative group rounded-3xl overflow-hidden shadow-2xl border border-[#355E3B]/40 max-w-md mx-auto bg-gradient-to-br from-[#002147]/20 to-black/20 backdrop-blur-sm">
+                      {/* Gambar dengan rasio 4:3 */}
+                      <div className="aspect-[4/3] overflow-hidden">
+                        <img
+                          src={slide.img}
+                          alt={slide.name}
+                          className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+                        />
+                      </div>
+                      {/* Overlay gradien yang muncul saat hover */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      {/* Nama produk muncul saat hover */}
+                      <div className="absolute bottom-0 left-0 right-0 p-4 text-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 className="text-white text-xl md:text-2xl font-bold font-grunge-decade-regular drop-shadow-lg">
+                          {slide.name}
+                        </h3>
+                      </div>
+                      {/* Efek cahaya halus saat hover */}
+                      <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#355E3B]/10 to-[#002147]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              {/* Indikator tambahan untuk menarik perhatian */}
+              <div className="text-center mt-4 text-gray-400 text-sm animate-pulse">
+                Geser untuk melihat lebih banyak!
+              </div>
+            </div>
           </div>
         </div>
       </div>

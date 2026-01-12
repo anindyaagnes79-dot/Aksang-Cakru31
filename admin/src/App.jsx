@@ -3,6 +3,9 @@ import login from './components/login.jsx'
 import sidebar from './components/sidebar.jsx'
 export const backendUrl = 'http://localhost:4000'
 
+
+
+
 const App = () => {
   const [token, setToken] = useState(localStorage.getItem('token' || ""))
   useEffect(()=> {
@@ -12,7 +15,15 @@ const App = () => {
     <div>
       {
         token === "" ? (<login />) : (
-          
+          <>
+          <div>
+            <Routes>
+              <Route path="/add" element= {<AddCatalog token={token}/>}/>
+              <Route path="/list" element={<ListCatalog token={token}/>}/>
+              <Route path="/table" element={<AdminTable token={token}/>}/>
+            </Routes>
+          </div>
+          </>
         )
       }
     </div>
