@@ -389,23 +389,27 @@ function HomeContent({ setPage = () => {} }) {
           >
             Grab your reservation!!
           </h4>
-          <a
+          <button
+            onClick={() => {
+              setPage("reservation");
+              window.scrollTo(0, 0);
+            }}
             className="
-                inline-block
-                mt-4
-                rounded-full
-                bg-[#5a8f3e]
-                px-5 py-2
-                text-[20px]
-                shadow-lg
-                transition-transform
-                hover:scale-110
-                hover:bg-[#4a7b32]
-                cursor-pointer
-            "
+            inline-block
+            mt-4
+            rounded-full
+            bg-[#5a8f3e]
+            px-5 py-2
+            text-[20px]
+            shadow-lg
+            transition-transform
+            hover:scale-110
+            hover:bg-[#4a7b32]
+            cursor-pointer
+          "
           >
             RESERVATION
-          </a>
+          </button>
         </div>
 
         {/*====================== MERCH ====================== */}
