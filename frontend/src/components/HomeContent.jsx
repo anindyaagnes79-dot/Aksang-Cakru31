@@ -31,14 +31,6 @@ import Vector96 from "../assets/Vector 96.png";
 import Booth from "../assets/booth.avif";
 import BgTxt2 from "../assets/bg texture 2.png";
 
-//merch
-import EnamelPin from "../assets/Merch/Enamel Pin.jpg";
-import Keychain from "../assets/Merch/Keychain.jpg";
-import Kipas from "../assets/Merch/Kipas.jpg";
-import StickerFishies from "../assets/Merch/Sticker Pack Fishies.jpg";
-import StickerHearmony from "../assets/Merch/Sticker Pack Hearmony.jpg";
-import StickerSkena from "../assets/Merch/Sticker Pack Skena.jpg";
-import StickerSatuan from "../assets/Merch/Sticker Satuan.jpg";
 // MERCH 2 PNG
 import EnamelPin from "../assets/Merch 2/enamel pin.png";
 import Keychain from "../assets/Merch 2/keychain.png";
@@ -389,23 +381,27 @@ function HomeContent({ setPage = () => {} }) {
           >
             Grab your reservation!!
           </h4>
-          <a
-            className="
-                inline-block
-                mt-4
-                rounded-full
-                bg-[#5a8f3e]
-                px-5 py-2
-                text-[20px]
-                shadow-lg
-                transition-transform
-                hover:scale-110
-                hover:bg-[#4a7b32]
-                cursor-pointer
-            "
-          >
-            RESERVATION
-          </a>
+                  <button
+          onClick={() => {
+            setPage("reservation");
+            window.scrollTo(0, 0);
+          }}
+          className="
+            inline-block
+            mt-4
+            rounded-full
+            bg-[#5a8f3e]
+            px-5 py-2
+            text-[20px]
+            shadow-lg
+            transition-transform
+            hover:scale-110
+            hover:bg-[#4a7b32]
+            cursor-pointer
+          "
+        >
+          RESERVATION
+        </button>
         </div>
 
         {/*====================== MERCH ====================== */}

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 // ===== MERCH IMAGES =====
 import EnamelPin from '../assets/Merch/Enamel Pin.jpg'
-import Keychain from '../assets/Merch/Keychain.jpg'
+import Keychain from '../assets/Merch/New Keychain.png'
 import Kipas from '../assets/Merch/Kipas.jpg'
 import StickerFishies from '../assets/Merch/Sticker Pack Fishies.jpg'
 import StickerHearmony from '../assets/Merch/Sticker Pack Hearmony.jpg'
