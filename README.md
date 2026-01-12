@@ -12,7 +12,7 @@ Cara commit di VSCode
   ```
 - Pastikan sudah copy repository ke laptop kalian
   ```bash
-  git clone https://github.com/anindyaagnes79-dot/Aksang-Cakru31
+  git clone https://github.com/anindyaagnes79-dot/hearmony
   ```
 - Tiap selesai menambahkan sesuatu lakukan ini
   ```bash
