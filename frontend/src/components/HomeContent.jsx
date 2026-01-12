@@ -195,7 +195,7 @@ function HomeContent({ setPage = () => {} }) {
                 relative 
                 z-[2] 
                 mt-6 
-                text-[300%] 
+                text-[50%] 
                 text-[#f7d154]"
           >
             <b id="tbl">To be Loved</b> <b id="tbh">is To be Heard</b>
