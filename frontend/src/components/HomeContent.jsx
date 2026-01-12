@@ -153,7 +153,7 @@ function HomeContent({ setPage = () => {} }) {
 
         {/*banner*/}
         {/* ================= HERO ================= */}
-        <div className="relative z-10 w-full pt-28 sm:pt-32 md:pt-40 pb-12 md:pb-20 px-4 sm:px-6 md:px-12 text-center font-bold font-['Grunge-Decade'] tracking-wide md:tracking-widest bg-[repeating-conic-gradient(from_0deg_at_50%_50%,#3a7d1e_0deg_15deg,#005f34_15deg_30deg,#9e0b28_30deg_45deg,#102a44_45deg_60deg,#004c97_60deg_75deg)]">
+        <div className="relative w-full z-10 w-full pt-28 sm:pt-32 md:pt-40 pb-12 md:pb-20 px-4 sm:px-6 md:px-12 text-center font-bold font-['Grunge-Decade'] tracking-wide md:tracking-widest bg-[repeating-conic-gradient(from_0deg_at_50%_50%,#3a7d1e_0deg_15deg,#005f34_15deg_30deg,#9e0b28_30deg_45deg,#102a44_45deg_60deg,#004c97_60deg_75deg)]">
 
           <div className="absolute inset-0 z-[2] blur-sm opacity-90">
             <img
@@ -178,7 +178,7 @@ function HomeContent({ setPage = () => {} }) {
             />
           </div>
 
-          <img src={LOGO} alt="banner" className="mx-auto w-28 md:w-44 lg:w-56 xl:w-64 max-w-[280px] mb-6"/>
+          <img src={LOGO} alt="banner" className="block relative left-1/2 -translate-x-1/2 w-28 md:w-48 md:scale-[1.6] lg:scale-[1.9] xl:scale-[2.1] mb-6"/>
 
           <h1 className="text-[#f7d154] font-bold leading-tight">
             <span className="block text-lg sm:text-xl md:text-3xl lg:text-4xl">
