@@ -154,8 +154,7 @@ function HomeContent({ setPage = () => {} }) {
         {/*banner*/}
         {/* ================= HERO ================= */}
         <div className="relative w-full z-10 w-full pt-28 sm:pt-32 md:pt-40 pb-12 md:pb-20 px-4 sm:px-6 md:px-12 text-center font-bold font-['Grunge-Decade'] tracking-wide md:tracking-widest bg-[repeating-conic-gradient(from_0deg_at_50%_50%,#3a7d1e_0deg_15deg,#005f34_15deg_30deg,#9e0b28_30deg_45deg,#102a44_45deg_60deg,#004c97_60deg_75deg)]">
-
-          <div className="absolute inset-0 z-[2] blur-sm opacity-90">
+          <div className="absolute inset-0 z-[2] blur-sm opacity-0 md:opacity-90">
             <img
               className="absolute md:top-[100px] left-[-100px] scale-[0.2]"
               src={Vector135}
@@ -178,7 +177,11 @@ function HomeContent({ setPage = () => {} }) {
             />
           </div>
 
-          <img src={LOGO} alt="banner" className="block relative left-1/2 -translate-x-1/2 w-28 md:w-48 md:scale-[1.6] lg:scale-[1.9] xl:scale-[2.1] mb-6"/>
+          <img
+            src={LOGO}
+            alt="banner"
+            className="block relative left-1/2 -translate-x-1/2 h-auto w-80% md:w-48 md:scale-[1.6] lg:scale-[1.9] xl:scale-[2.1] mb-6"
+          />
 
           <h1 className="text-[#f7d154] font-bold leading-tight">
             <span className="block text-lg sm:text-xl md:text-3xl lg:text-4xl">
@@ -203,7 +206,6 @@ function HomeContent({ setPage = () => {} }) {
 
         {/*booth*/}
         <section className="relative z-10 py-20 md:py-28">
-
           <h1
             className="text-center
           mb-20 text-xl sm:text-2xl md:text-4xl lg:text-6xl font-bold md:tracking-[5px]"
@@ -272,7 +274,7 @@ function HomeContent({ setPage = () => {} }) {
               <img src={Vector136} alt="element" className=" blur-[1.5px]" />
             </div>
           </div>
-          <div className="absolute scale-[0.3] bottom-[-290px] md:bottom-[-570px] md:left-[0px] z-[3]">
+          <div className="absolute scale-[0.3] bottom-[-270px] md:bottom-[-570px] md:left-[0px] z-[3]">
             <img src={tanganhijau} alt="element" className="" />
           </div>
 
@@ -291,7 +293,7 @@ function HomeContent({ setPage = () => {} }) {
               },
               {
                 title: "Made It",
-                desc: "Booth yang berisi dokumentasi perjuangan cakru dari awal menetapkan ITB sebagai kampus pilihan, belajar keras, berdoa, latihan berulang, dan akhirnya menjadi #itbboys n #itbgirls.",
+                desc: "Booth yang berisi dokumentasi perjuangan dari awal menetapkan ITB sebagai kampus pilihan, belajar keras, berdoa, latihan berulang, dan akhirnya menjadi #itbboys n #itbgirls.",
                 image: elementMakeIt,
               },
             ].map((item, i) => (
@@ -316,7 +318,7 @@ function HomeContent({ setPage = () => {} }) {
                 </div>
 
                 {/* textbox */}
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/2 mx-4px md:mx-10">
                   <div className="relative bg-gradient-to-br from-[#004c97]/80 to-black/80 backdrop-blur-lg p-6 md:p-8 rounded-3xl shadow-2xl border border-[#355E3B]/40">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                       {item.title}
@@ -400,9 +402,6 @@ function HomeContent({ setPage = () => {} }) {
 
         {/*====================== MERCH ====================== */}
         <section className="relative z-10 pt-24 md:pt-32 pb-20 md:pb-28">
-
-        
-
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center px-4">
             {/* TEXT */}
             <div className="relative bg-gradient-to-br from-[#002147]/80 to-black/80 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-[#355E3B]/40 group hover:shadow-[#355E3B]/30 transition-shadow duration-500">
