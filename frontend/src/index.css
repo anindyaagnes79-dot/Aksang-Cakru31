@@ -4,21 +4,21 @@
 
 @font-face {
   font-family: "UT Staybro";
-  src: url("/frontend/public/fonts/UT\ Staybro\ Demo.woff2") format("truetype");
+  src: url("/frontend/public/fonts/UT\ Staybro\ Demo.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Perandory";
-  src: url("/frontend/public/fonts/PerandorySemiCondensed.woff2") format("truetype");
+  src: url("/frontend/public/fonts/PerandorySemiCondensed.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Grunge Decade";
-  src: url("/frontend/public/fonts/GrungeDecadeRegular.woff2") format("truetype");
+  src: url("/frontend/public/fonts/GrungeDecadeRegular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
