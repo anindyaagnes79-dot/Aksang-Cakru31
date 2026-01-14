@@ -10,6 +10,7 @@ export default {
         utstaybro: ["UT Staybro", "sans-serif"],
         perandory: ["Perandory", "sans-serif"],
         grunge: ["Grunge Decade", "sans-serif"],
+        stacksans: ["Stack Sans", "sans serif"]
       }
     },
   },

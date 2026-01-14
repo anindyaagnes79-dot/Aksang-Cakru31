@@ -156,7 +156,7 @@ function HomeContent() {
 
         {/*banner*/}
         {/* ================= HERO ================= */}
-        <div className="relative w-full z-10 w-full pt-28 sm:pt-32 md:pt-40 pb-12 md:pb-20 px-4 sm:px-6 md:px-12 text-center font-bold font-['Grunge-Decade'] tracking-wide md:tracking-widest bg-[repeating-conic-gradient(from_0deg_at_50%_50%,#3a7d1e_0deg_15deg,#005f34_15deg_30deg,#9e0b28_30deg_45deg,#102a44_45deg_60deg,#004c97_60deg_75deg)]">
+        <div className="relative w-full z-10 w-full pt-28 sm:pt-32 md:pt-40 pb-12 md:pb-20 px-4 sm:px-6 md:px-12 text-center font-bold font-grunge tracking-wide md:tracking-widest bg-[repeating-conic-gradient(from_0deg_at_50%_50%,#3a7d1e_0deg_15deg,#005f34_15deg_30deg,#9e0b28_30deg_45deg,#102a44_45deg_60deg,#004c97_60deg_75deg)]">
           <div className="absolute pointer-events-none inset-0 z-[2] blur-sm opacity-0 md:opacity-90">
             <img
               className="absolute pointer-events-none md:top-[100px] left-[-100px] scale-[0.2]"
@@ -326,7 +326,7 @@ function HomeContent() {
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                       {item.title}
                     </h2>
-                    <p className="text-gray-300 text-lg md:text-xl leading-relaxed font-perandory">
+                    <p className="text-gray-300 text-lg md:text-xl leading-relaxed font-stacksans">
                       {item.desc}
                     </p>
                     <div
@@ -403,7 +403,7 @@ function HomeContent() {
                   special merch!
                 </span>
               </h2>
-              <p className="text-gray-300 leading-relaxed mb-10 text-lg md:text-xl font-perandory animate-fade-in-delay drop-shadow-md">
+              <p className="text-gray-300 leading-relaxed mb-10 text-lg md:text-xl font-stacksans animate-fade-in-delay drop-shadow-md">
                 HEARMONY merupakan platform yang menghadirkan berbagai
                 merchandise eksklusif untuk Hearmates. Dari aksesoris unik
                 hingga stiker gemas, semua dibuat supaya pengalamanmu di
@@ -456,7 +456,7 @@ function HomeContent() {
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <div className="text-center mt-4 text-gray-400 text-sm animate-pulse">
+              <div className="text-center mt-4 text-gray-400 text-sm animate-pulse text-stacksans">
                 Geser untuk melihat lebih banyak!
               </div>
             </div>
