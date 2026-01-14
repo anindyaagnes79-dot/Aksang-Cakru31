@@ -42,7 +42,7 @@ import StckerSkena from "../assets/Merch/Sticker Pack Skena.jpg";
 import StckerSatuan from "../assets/Merch/Sticker Satuan.jpg";
 // MERCH 2 PNG
 import EnamelPin from "../assets/Merch 2/enamel pin.png";
-import Keychain from "../assets/Merch 2/keychain.png";
+import Keychain from "../assets/Merch 2/keychain.jpeg";
 import Kipas from "../assets/Merch 2/kipas.png";
 import StickerFishies from "../assets/Merch 2/sticker pack fishies.png";
 import StickerHearmony from "../assets/Merch 2/sticker pack hearmony.png";
