@@ -31,14 +31,6 @@ Cara commit di VSCode
   ```
 - Buka link server live host
 
-## Cara Cek BackEnd JS
-
-Di VSCode, klik kanan folder /backend
-Pilih 'Open in Integrated Terminal'
-```bash
-npm run server
-```
-
 ### Cara Cek Routes
 
 Di VSCode, instal *extension* Thunder Client
