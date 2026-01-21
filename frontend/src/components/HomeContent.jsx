@@ -180,20 +180,23 @@ function HomeContent() {
             />
           </div>
 
-          <img
+          <div>
+            <img
             src={LOGO}
             alt="banner"
             className="block relative left-1/2 -translate-x-1/2 h-auto w-80% md:w-48 md:scale-[1.6] lg:scale-[1.9] xl:scale-[2.1] mb-6"
-          />
+            />
 
-          <h1 className="text-[#f7d154] font-bold leading-tight">
-            <span className="block text-lg sm:text-xl md:text-3xl lg:text-4xl">
-              To be Loved
-            </span>
-            <span className="block text-base sm:text-lg md:text-3xl opacity-90">
-              is To be Heard
-            </span>
-          </h1>
+            <h1 className="text-[#f7d154] font-bold leading-tight">
+              <span className="block text-lg sm:text-xl md:text-3xl lg:text-4xl">
+                To be Loved
+              </span>
+              <span className="block text-base sm:text-lg md:text-3xl opacity-90">
+                is To be Heard
+              </span>
+            </h1>
+          </div>
+          
         </div>
 
         <div
