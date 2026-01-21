@@ -360,24 +360,15 @@ function HomeContent() {
         "
         >
           <img src={tanganhijau} alt="element" className="block relative left-1/2 -translate-x-1/2 h-auto w-80% md:w-48 md:scale-[1.6] lg:scale-[1.9] xl:scale-[2.1] mb-6" />
-          <h2
-            className="
-          text-xl sm:text-2xl md:text-4xl lg:text-6xl
-          md:text-[76px]
-          tracking-[5px]
-          md:tracking-[20px]
-          "
-          >
-            25 January 2026
-          </h2>
-          <h4
-            className="
-            text-[180%]
-          md:text-[55px]
-          "
-          >
-            Grab your reservation!!
-          </h4>
+          <div className="mt-20 md:mt-32">
+            <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl md:text-[76px] tracking-[5px] md:tracking-[20px]">
+              25 January 2026
+            </h2>
+            <h4 className="text-[180%] md:text-[55px]">
+              Grab your reservation!!
+            </h4>
+          </div>
+          
           <button
             onClick={() => {
               Navigate("/reservation"); 
