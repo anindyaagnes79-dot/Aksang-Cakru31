@@ -42,7 +42,7 @@ const products = [
     id: 3,
     name: "Kipas",
     price: "Rp 10.000",
-    status: "available",
+    status: "soldout",
     description:
       "Kipas dengan desain colourful dan abstrak yang ringan dan praktis jadi wajib masuk tas setiap ke konser atau beraktivitas outdoor.",
     image: Kipas,
@@ -284,8 +284,8 @@ function MerchCatalog() {
               <button
                 disabled={selectedProduct.status === "soldout"}
                 onClick={() => {
-                  if (selectedProduct.status !== "soldout") {
-                    window.open(
+                  if (selectedProduct.status !== "available") {
+                    window.open( 
                       "https://docs.google.com/forms/d/e/1FAIpQLSeJ0HOkqbYJYdNhnIVCnjZVLkPyeqn4c1jVe2hvURsd2_8wnA/viewform",
                       "_blank"
                     );
@@ -299,7 +299,7 @@ function MerchCatalog() {
               >
                 {selectedProduct.status === "soldout"
                   ? "CLOSE PRE-ORDER"
-                  : "CLOSE PRE-ORDER"}
+                  : "AVAILABLE ON THE SPOT"}
               </button>
             </div>
           </div>
