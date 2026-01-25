@@ -42,7 +42,7 @@ const products = [
     id: 3,
     name: "Kipas",
     price: "Rp 10.000",
-    status: "soldout",
+    status: "available",
     description:
       "Kipas dengan desain colourful dan abstrak yang ringan dan praktis jadi wajib masuk tas setiap ke konser atau beraktivitas outdoor.",
     image: Kipas,
